@@ -38,6 +38,10 @@ chore(xxx): :ticket: Chores
 
 revert(xxx): :back: Reverts
 
+``
+feat!:, or fix!:, refactor!:, etc., which represent a breaking change (indicated by the !) and will result in a SemVer major.
+``
+
 ## Examples:
 ### Good commits:
 
