@@ -1,10 +1,10 @@
-## Conventional Commits
+# Conventional Commits
 
-The [Conventional Commits](https://www.conventionalcommits.org/) specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages.
+The [Conventional Commits](https://www.conventionalcommits.org/) specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with [SemVer](https://semver.org/), by describing the features, fixes, and breaking changes made in commit messages.
 
 ## How should I write my commits?
 
-The commit message should be structured as follows:
+Conventional Commits have the following format:
 
 ```
 <type>[optional scope]: <description>
@@ -51,6 +51,11 @@ revert(xxx): :back: Reverts
 5 file changed, 3 insertion(+)
 ```
 
+```
+> git commit -m "build: updated the offline prod app version to v2.1.18 (#46897)"
+4 file changed, 1 insertion(+)
+```
+
 
 ### Bad commits:
 ```
@@ -63,10 +68,20 @@ Commit message not follow Conventional Commits
 Commit message not follow Conventional Commits
 ```
 
-### Why Use Conventional Commits
+### Why to use Conventional Commits?
 
 - Automatically generating CHANGELOGs.
 - Automatically determining a semantic version bump (based on the types of commits landed).
 - Communicating the nature of changes to teammates, the public, and other stakeholders.
 - Triggering build and publish processes.
 Making it easier for people to contribute to your projects, by allowing them to explore a more structured commit history.
+
+
+### NPM Packages
+- [Commitizen](https://www.npmjs.com/package/commitizen)
+- [Commitlint](https://commitlint.js.org/)
+
+### Reference
+
+- [To setup VSCode Conventional-Commits Extension](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
+- [Read more about Conventional Commits](https://medium.com/neudesic-innovation/conventional-commits-a-better-way-78d6785c2e08)
