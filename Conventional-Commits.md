@@ -51,6 +51,11 @@ feat!:, or fix!:, refactor!:, etc., which represent a breaking change (indicated
 ```
 
 ```
+> git commit -m "feat: NH-3 added home.jsx file"
+1 file changed, 1 insertion(+)
+```
+
+```
 > git commit -m "fix: minor typos in code"
 5 file changed, 3 insertion(+)
 ```
